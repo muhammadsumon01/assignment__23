@@ -33,17 +33,72 @@
 
     <!-- CSS Link  -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/vendors/dependency.css">
+    <link rel="stylesheet" href="assets/css/dependency.css">
 
 
 </head>
 
 <body>
+    <div class="container-xxl teamMember__container">
+        <div class="row">
+            <div class="col-md-4">
+                <form class="position-sticky devAddForm" method="post" style="top:10px;margin:30px;">
+                    <div class="form-control">
+                        <div class="border p-2 d-flex">
+                            <input type="checkbox" id="generateData" class="me-2">
+                            <label for="generateData" class="user-select-none">Generate Form Data Automatically</label>
+                            <i class=""></i>
+                        </div>
 
+                        <input required="" value="Muhammad Sumon" id="devName" class="w-100 p-2 my-2"
+                            placeholder="Developer Name" name="devName" type="text">
 
+                        <select class="form-select" name="devSkill" id="devTitle" required="">
+                            <option class="user-select-none" value="" disabled="" selected="">Select Devs Skill</option>
 
-    <!-- JS Link  -->
-    <script src="assets/js/app.js"></script>
+                            <option value="Php Developer">Php Dev</option>
+
+                            <option value="Python Developer">Python Dev</option>
+
+                            <option value="C# Developer">C# Dev</option>
+
+                            <option value="JS Developer">JS Dev</option>
+
+                            <option value="Java Developer">Java Dev</option>
+                        </select>
+
+                        <input required="" value="" id="devImg" class="w-100 p-2 my-2" placeholder="Developer image"
+                            type="text" name="devImg">
+
+                        <input value="Dhaka" required="" id="devLocation" name="devLocation" class="w-100 p-2 my-2"
+                            placeholder="Developer Location" type="text">
+
+                        <input value="21" required="" id="devAge" name="devAge" class="w-100 p-2 my-2"
+                            placeholder="Developer Age" type="number">
+
+                        <input value="4555" required="" id="devIncome" name="devIncome" class="w-100 p-2 my-2"
+                            placeholder="Developer Income Ex- 4200$" type="number">
+
+                        <input class="w-100 p-2 my-2 btn btn-success" value="Add Dev" type="submit">
+                    </div>
+                </form>
+                <form class="position-sticky editDevInfoForm p-3" action="javascript:devEdit()"
+                    style="top:10px;margin:30px;">
+                    <div class="form-control">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-8">
+                <div class="developer__item__container" style="top:10px;margin:30px;">
+                </div>
+            </div>
+        </div>
+
+        <!-- JS Link  -->
+        <script src="assets/js/src/ShortAnything.js"></script>
+        <script src="assets/js/src/Generate.js"></script>
+        <script src="assets/js/src/LocalStorage.js"></script>
+        <script src="assets/js/app.js"></script>
 
 </body>
 
